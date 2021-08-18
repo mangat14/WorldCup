@@ -4,7 +4,6 @@ import CheckBox from "@react-native-community/checkbox";
 import styles from "./styles/LoginStyles";
 import { colors } from "../utils/colors";
 
-
 class SignUp extends React.Component{
   constructor(props) {
     super(props);
