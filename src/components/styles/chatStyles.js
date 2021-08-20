@@ -1,5 +1,8 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet,Dimensions} from "react-native";
 import { colors } from "../../utils/colors";
+const window=Dimensions.get('window')
+const height=window.height
+const width=window.width
 const styles=StyleSheet.create({
 
   chatView:{
@@ -36,8 +39,17 @@ const styles=StyleSheet.create({
     fontWeight:'bold',
     fontSize:20,
     borderRadius:5,
-  }
-
+  },
+  container: {
+  //  ...StyleSheet.absoluteFillObject,
+    height: height,
+    width: 400,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
 
 })
 export default styles
