@@ -3,8 +3,6 @@ import { StyleSheet, View, TextInput, Text, Alert, TouchableOpacity } from "reac
 import CheckBox from "@react-native-community/checkbox";
 import styles from "./styles/LoginStyles";
 import { colors } from "../utils/colors";
-
-
 class SignUp extends React.Component{
   constructor(props) {
     super(props);

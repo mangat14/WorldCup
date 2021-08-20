@@ -4,9 +4,7 @@ import CheckBox from "@react-native-community/checkbox";
 import styles from "./styles/LoginStyles";
 import { colors } from "../utils/colors";
 import {connect,Connect} from "react-redux";
-import {getLoginData} from "../actions/HomeAction";
-import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
-import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
+
 
 
 class LogIn extends React.Component {
@@ -90,6 +88,9 @@ class LogIn extends React.Component {
             <Text>Sign In</Text>
           </TouchableOpacity>
 
+          <TouchableOpacity onPress={()=>this.props.navigation.navigate("chatScreen")}>
+            <Text>chatScreen</Text>
+          </TouchableOpacity>
           <Text style={styles.Text1}>
             <Text style={styles.Text2}>Don't have an acoount</Text>
             <Text style={styles.Text3}
