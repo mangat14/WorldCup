@@ -42,7 +42,7 @@ const styles=StyleSheet.create({
   },
   container: {
   //  ...StyleSheet.absoluteFillObject,
-    height: height,
+    height: height/2.15,
     width: 400,
     justifyContent: 'flex-end',
     alignItems: 'center',
